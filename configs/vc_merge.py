@@ -5,7 +5,7 @@ def halui_tokens(filename):
     try:
         with open(filename, 'r') as file:
             for line in file:
-                matches = re.finditer(r'(halui[a-zA-Z0-9.-]+)', line)
+                matches = re.finditer(r'(halui[a-zA-Z0-9.-]+)|net ([a-zA-Z0-9.-]+)', line)
                 for match in matches:
                     yield match.group()
     except FileNotFoundError:
@@ -15,7 +15,7 @@ def halui_tokens(filename):
 
 def comment_line_matching_token(multiline_string, token):
     lines = multiline_string.split('\n')
-    commented_lines = ['# ' + line if token in line else line for line in lines]
+    commented_lines = ['#' + line if token in line and not line.lstrip().startswith('#') else line for line in lines]
     return '\n'.join(commented_lines)
 
 if __name__ == "__main__":
