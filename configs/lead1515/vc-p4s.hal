@@ -121,11 +121,8 @@ net machine-ison halui.machine.is-on => vc-p4s.machine.ison
 ##### P4-S PENDANT SETTINGS #####
 
 # 15---STEP SIZE, SET 0 TO SKIP
-setp stepsize-1 	0.0005
-
-# DEFAULT
+setp stepsize-1 	0.0001
 setp stepsize-2 	0.001
-
 setp stepsize-3 	0.01
 setp stepsize-4 	0.1
 setp stepsize-5 	1
