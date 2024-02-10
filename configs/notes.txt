@@ -1,0 +1,5 @@
+# Old version downloaded from Internet
+1747f553f93ecaa8dd1f742e446be10a3774323aebb6b48239535753b5ba6f27  vc-p4s
+
+# New version sent by Lee from VistaCNC Support
+cf09c762c1cd26dffe87f71cd6b63b7fe0fef78df73468301e804cc4e0958a84  vc-p4s-new

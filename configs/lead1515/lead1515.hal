@@ -342,8 +342,8 @@ net machine-is-enabled        <=  motion.motion-enabled
 
 #  ---estop signals---
 
-#net estop-out     <=  iocontrol.0.user-enable-out
-#net estop-out     =>  iocontrol.0.emc-enable-in
+net estop-out     <=  iocontrol.0.user-enable-out
+net estop-out     =>  iocontrol.0.emc-enable-in
 
 #  ---manual tool change signals---
 
